@@ -1,0 +1,24 @@
+apiVersion: core.api.humanitec.io/v1
+kind: Definition
+metadata:
+  id: iam-policy-sqs-tf-admin
+object:
+  type: aws-policy
+  driver_type: humanitec/terraform
+  driver_inputs:
+    values:
+      source:
+        url: https://github.com/humanitec-hackteam5/terraform-demo
+        rev: refs/heads/main
+        path: iam-policy-sqs-admin
+      variables:
+        sqs_queue_arn: "${resources['sqs.default'].outputs.arn}"
+        region: "${resources['sqs.default'].outputs.region}"
+        prefix: "${resources['sqs.default'].outputs.prefix}"
+    secrets:
+      variables:
+        credentials:
+          access_key: ${resources['base-env.default'].outputs.aws.access_key}
+          secret_key: ${resources['base-env.default'].outputs.aws.secret_key}
+  criteria:
+    - class: sqs-admin
