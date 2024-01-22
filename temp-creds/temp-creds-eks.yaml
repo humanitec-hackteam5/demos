@@ -1,0 +1,16 @@
+apiVersion: core.api.humanitec.io/v1
+kind: Definition
+metadata:
+  id: temp-creds-eks
+object:
+  name: temp-creds-eks
+  driver_type: humanitec/k8s-cluster-eks
+  org_id: humanitec-nick
+  type: k8s-cluster
+  driver_account: test-aws-assumerole
+  driver_inputs:
+    values:
+      loadbalancer: a62549e114a2b4f599ce6e9a12a78f03-d5c5fa14a35795df.elb.eu-central-1.amazonaws.com
+      loadbalancer_hosted_zone: Z3F0SRJ5LGBH90
+      name: qa-test-2
+      region: eu-central-1

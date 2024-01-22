@@ -1,0 +1,12 @@
+apiVersion: core.api.humanitec.io/v1
+kind: Definition
+metadata:
+  id: base-env-referencing-a-non-secret
+object:
+  criteria:
+    - app_id: test-secret-ref-non-secret
+  driver_inputs:
+    secrets:
+      ref-non-secret: ${resources.config#non-secret.outputs.non-secret-value}
+  driver_type: humanitec/echo
+  type: base-env

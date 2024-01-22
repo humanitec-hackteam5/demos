@@ -1,0 +1,12 @@
+apiVersion: core.api.humanitec.io/v1
+kind: Definition
+metadata:
+  id: config-with-non-secret
+object:
+  criteria:
+    - res_id: non-secret
+  driver_inputs:
+    values:
+      non-secret-value: "this is not a secret"
+  driver_type: humanitec/echo
+  type: config
