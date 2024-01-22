@@ -10,7 +10,7 @@ object:
   driver_account: test-aws-assumerole
   driver_inputs:
     values:
-      loadbalancer: a62549e114a2b4f599ce6e9a12a78f03-d5c5fa14a35795df.elb.eu-central-1.amazonaws.com
+      loadbalancer: a296886cca091411691c0dc1e985621d-c043e1b10ea254c3.elb.eu-central-1.amazonaws.com
       loadbalancer_hosted_zone: Z3F0SRJ5LGBH90
       name: qa-test-2
       region: eu-central-1
