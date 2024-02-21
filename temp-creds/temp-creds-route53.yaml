@@ -2,7 +2,7 @@ apiVersion: core.api.humanitec.io/v1
 kind: Definition
 metadata:
   id: temp-creds-route53
-object:
+entity:
   name: temp-creds-route53
   driver_type: humanitec/dns-aws-route53
   org_id: humanitec-nick

@@ -1,0 +1,10 @@
+apiVersion: core.api.humanitec.io/v1
+kind: Definition
+metadata:
+  id: temp-creds-base-env
+entity:
+  name: temp-creds-base-env
+  driver_type: humanitec/echo
+  org_id: humanitec-nick
+  type: base-env
+  driver_account: test-aws-assumerole

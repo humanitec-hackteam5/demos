@@ -1,13 +1,13 @@
 apiVersion: core.api.humanitec.io/v1
 kind: Definition
 metadata:
-  id: temp-creds-eks
+  id: temp-creds-eks-ref
 entity:
-  name: temp-creds-eks
+  name: temp-creds-eks-ref
   driver_type: humanitec/k8s-cluster-eks
   org_id: humanitec-nick
   type: k8s-cluster
-  driver_account: test-aws-assumerole
+  driver_account: "${resources['base-env#base-env'].account}"
   driver_inputs:
     values:
       loadbalancer: a296886cca091411691c0dc1e985621d-c043e1b10ea254c3.elb.eu-central-1.amazonaws.com
