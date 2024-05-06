@@ -1,0 +1,15 @@
+apiVersion: entity.humanitec.io/v1b1
+kind: Definition
+metadata:
+  id: gke-demo-cluster-temp-cred
+entity:
+  name: gke-demo-cluster-temp-cred
+  type: k8s-cluster
+  driver_type: humanitec/k8s-cluster-gke
+  driver_account: gcp-identity
+  driver_inputs:
+    values:
+      loadbalancer: 35.198.79.43
+      name: demo
+      project_id: hum-dev-demo-resources
+      zone: europe-west3

@@ -1,0 +1,16 @@
+apiVersion: entity.humanitec.io/v1b1
+kind: Definition
+metadata:
+  id: qa-aks-temp-cred
+entity:
+  name: qa-aks-temp-cred
+  type: k8s-cluster
+  driver_account: azure-identity
+  driver_type: humanitec/k8s-cluster-aks
+  driver_inputs:
+    values:
+      loadbalancer: 20.25.32.241
+      name: azure-qa-cluster-operator-aks
+      resource_group: qa-test-resources
+      server_app_id: 6dae42f8-4368-4678-94ff-3960e28e3630
+      subscription_id: 55fa92e5-6dd3-48b8-bc33-086582fffa16

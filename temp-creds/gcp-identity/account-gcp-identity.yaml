@@ -1,0 +1,10 @@
+apiVersion: entity.humanitec.io/v1b1
+kind: Account
+metadata:
+  id: gcp-identity
+entity:
+  name: gcp-identity
+  type: gcp-identity
+  credentials:
+    gcp_audience: //iam.googleapis.com/projects/726509814508/locations/global/workloadIdentityPools/humanitec-oidc/providers/humanitec
+    gcp_service_account: humanitec-wif@hum-dev-demo-resources.iam.gserviceaccount.com

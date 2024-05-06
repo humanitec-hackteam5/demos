@@ -1,0 +1,11 @@
+apiVersion: entity.humanitec.io/v1b1
+kind: Account
+metadata:
+  id: azure-identity
+entity:
+  name: azure-identity
+  type: azure-identity
+  credentials:
+    azure_identity_tenant_id: 6d8d0293-b61f-4c9e-af7d-511f9dd5ea80
+    azure_identity_client_id: 88177cf3-5cf0-45d6-9fa0-81884a5abd4c
+
